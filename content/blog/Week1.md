@@ -1,9 +1,9 @@
 ---
 title: "Lol"
 date: 2023-05-30T18:26:47+05:30
-draft: false
+draft: true
 ---
-
+<!-- 
 I got accepted for Google Summer of Code 2023 with PostgreSQL . I'm stoked to be working on a project where I'll be creating an easy-to-follow tutorial on writing Postgres extension under the guidance of awesome mentors.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*-7-lbvUwsPsW1-v4jTVZGw.png)
@@ -28,4 +28,4 @@ During this period, I encountered issues with accessing control files, versionin
 
 During the second week, I spent time studying regression testing. While I encountered issues implementing pg_regress, I discovered alternative regression testing tools like pgTAP.
 
-Overall, my experience in the first two weeks of this project has been both enriching and challenging. Throughout this journey, I have gained valuable insights, developed my understanding of fundamental concepts, and honed my problem-solving skills. As I continue with this project, I am excited about the opportunities and challenges that lay ahead.
+Overall, my experience in the first two weeks of this project has been both enriching and challenging. Throughout this journey, I have gained valuable insights, developed my understanding of fundamental concepts, and honed my problem-solving skills. As I continue with this project, I am excited about the opportunities and challenges that lay ahead. -->
