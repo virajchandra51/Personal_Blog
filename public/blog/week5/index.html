@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>GSoC’23 at PostgreSQL (Biweekly Report 5) | Viraj&#39;s Workspace</title>
+<meta name="keywords" content="">
+<meta name="description" content="Introduction:
+Welcome to the latest update on my Google Summer of Code (GSoC) project, where I&rsquo;ve been focused on Postgres extension development. Over the past two weeks, I&rsquo;ve encountered challenges, made progress in updating tutorials and extensions, and sought help from online communities. In this blog post, I will share the key highlights of my journey during this phase.
+Handling Functions and Packaging:
+I added information about handling functions in different extension versions to the makefile.">
+<meta name="author" content="Viraj Chandra">
+<link rel="canonical" href="/blog/week5/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.a72801f0f40a8d7f71aa1cafd1c2f2a993a1f26ca1cfd38fdba65d5b9b0f08a0.css" integrity="sha256-pygB8PQKjX9xqhyv0cLyqZOh8myhz9OP26ZdW5sPCKA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="GSoC’23 at PostgreSQL (Biweekly Report 5)" />
+<meta property="og:description" content="Introduction:
+Welcome to the latest update on my Google Summer of Code (GSoC) project, where I&rsquo;ve been focused on Postgres extension development. Over the past two weeks, I&rsquo;ve encountered challenges, made progress in updating tutorials and extensions, and sought help from online communities. In this blog post, I will share the key highlights of my journey during this phase.
+Handling Functions and Packaging:
+I added information about handling functions in different extension versions to the makefile." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/week5/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-07-18T18:26:47&#43;05:30" />
+<meta property="article:modified_time" content="2023-07-18T18:26:47&#43;05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSoC’23 at PostgreSQL (Biweekly Report 5)"/>
+<meta name="twitter:description" content="Introduction:
+Welcome to the latest update on my Google Summer of Code (GSoC) project, where I&rsquo;ve been focused on Postgres extension development. Over the past two weeks, I&rsquo;ve encountered challenges, made progress in updating tutorials and extensions, and sought help from online communities. In this blog post, I will share the key highlights of my journey during this phase.
+Handling Functions and Packaging:
+I added information about handling functions in different extension versions to the makefile."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Blogs",
+      "item": "/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "GSoC’23 at PostgreSQL (Biweekly Report 5)",
+      "item": "/blog/week5/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GSoC’23 at PostgreSQL (Biweekly Report 5)",
+  "name": "GSoC’23 at PostgreSQL (Biweekly Report 5)",
+  "description": "Introduction:\nWelcome to the latest update on my Google Summer of Code (GSoC) project, where I\u0026rsquo;ve been focused on Postgres extension development. Over the past two weeks, I\u0026rsquo;ve encountered challenges, made progress in updating tutorials and extensions, and sought help from online communities. In this blog post, I will share the key highlights of my journey during this phase.\nHandling Functions and Packaging:\nI added information about handling functions in different extension versions to the makefile.",
+  "keywords": [
+    
+  ],
+  "articleBody": " Introduction:\nWelcome to the latest update on my Google Summer of Code (GSoC) project, where I’ve been focused on Postgres extension development. Over the past two weeks, I’ve encountered challenges, made progress in updating tutorials and extensions, and sought help from online communities. In this blog post, I will share the key highlights of my journey during this phase.\nHandling Functions and Packaging:\nI added information about handling functions in different extension versions to the makefile. This addition helps ensure smooth functionality across multiple versions. Additionally, I packaged a final version of the quick start, providing users with an easy-to-use and comprehensive resource.\nIssue Reporting and Troubleshooting:\nDuring my work, I encountered an issue with pgxn_utils, which I promptly reported on GitHub and sought assistance on Stack Overflow. By doing so, I not only sought a resolution for myself but also helped others who may face the same problem.\nChallenges and Perseverance:\nI faced challenges while installing PL/v8. I broke down at the end and recorded my misery in this blog.\nUpdating pg_sample_ext:\nI updated pg_sample_ext to version 1.1, introducing composite types, domains, and an enumerated type. These additions enhance the functionality and versatility of the extension. Furthermore, a new update included a custom operator for performing specific data operations, and I included update scripts to assist users during the transition.\nIntegration of Postgres Documentation:\nTo enrich the learning experience for users, I integrated Postgres documentation links into the quick start tutorial. This allows readers to delve deeper into specific topics and access additional resources.\nPassed the Midterm Evaluations:\nGot Great Feedback from mentors , and getting that sweet stipend is definitely a nice bonus. It’s not all about the money, but hey, who doesn’t love a little extra cash in their pocket?\nChallenges with C Extension and Alternatives:\nWhile attempting a C extension, I encountered system issues that hindered progress. Seeking help on Stack Overflow, I am currently awaiting a response to overcome this obstacle. Meanwhile, I have shifted my focus to exploring procedural languages as an alternative solution.\nProductivity and Travel:\nDuring this phase, I had to travel back to my college as summer vacations had ended, which affected my productivity to some extent. This might slow my progress but a few extra hours to cover up won’t hurt.\nConclusion:\nDuring the last two weeks of my GSoC project, I have made progress by updating tutorials and extensions, while also facing challenges with the C extension. By troubleshooting and seeking help from online communities, I am actively working towards a resolution. Shifting focus to procedural languages has allowed me to make progress where needed.\n",
+  "wordCount" : "436",
+  "inLanguage": "en",
+  "datePublished": "2023-07-18T18:26:47+05:30",
+  "dateModified": "2023-07-18T18:26:47+05:30",
+  "author":{
+    "@type": "Person",
+    "name": "Viraj Chandra"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/blog/week5/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Viraj's Workspace",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="" accesskey="h" title="Viraj&#39;s Workspace (Alt + H)">Viraj&#39;s Workspace</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/adityatelange/hugo-PaperMod/wiki/" title="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="">Home</a>&nbsp;»&nbsp;<a href="/blog/">Blogs</a></div>
+    <h1 class="post-title">
+      GSoC’23 at PostgreSQL (Biweekly Report 5)
+    </h1>
+    <div class="post-meta">
+
+3 min&nbsp;·&nbsp;Viraj Chandra
+
+</div>
+  </header> 
+
+  <div class="post-content"><blockquote>
+<p>Introduction:<br>
+Welcome to the latest update on my Google Summer of Code (GSoC) project, where I&rsquo;ve been focused on Postgres extension development. Over the past two weeks, I&rsquo;ve encountered challenges, made progress in updating tutorials and extensions, and sought help from online communities. In this blog post, I will share the key highlights of my journey during this phase.</p>
+</blockquote>
+<p><strong>Handling Functions and Packaging:</strong><br>
+I added information about handling functions in different extension versions to the makefile. This addition helps ensure smooth functionality across multiple versions. Additionally, I packaged a final version of the quick start, providing users with an easy-to-use and comprehensive resource.</p>
+<p><strong>Issue Reporting and Troubleshooting:</strong><br>
+During my work, I encountered an issue with pgxn_utils, which I promptly reported on GitHub and sought assistance on Stack Overflow. By doing so, I not only sought a resolution for myself but also helped others who may face the same problem.</p>
+<p><strong>Challenges and Perseverance:</strong><br>
+I faced challenges while installing PL/v8. I broke down at the end and recorded my misery in this <a href="https://reqi3m.hashnode.dev/day-62-plv8-a-pain-in-the-a">blog</a>.</p>
+<p><strong>Updating pg_sample_ext:</strong><br>
+I updated pg_sample_ext to version 1.1, introducing composite types, domains, and an enumerated type. These additions enhance the functionality and versatility of the extension. Furthermore, a new update included a custom operator for performing specific data operations, and I included update scripts to assist users during the transition.</p>
+<p><img loading="lazy" src="https://cdn-images-1.medium.com/max/1600/1*sSa6pEggo9CBDpUndGp9gg.png" alt=""  />
+</p>
+<p><img loading="lazy" src="https://cdn-images-1.medium.com/max/1200/1*awl5orZLY1AUO8wAXphV6A.png" alt=""  />
+</p>
+<p><strong>Integration of Postgres Documentation:</strong><br>
+To enrich the learning experience for users, I integrated Postgres documentation links into the quick start tutorial. This allows readers to delve deeper into specific topics and access additional resources.</p>
+<p><strong>Passed the Midterm Evaluations:</strong><br>
+Got Great Feedback from mentors , and getting that sweet stipend is definitely a nice bonus. It&rsquo;s not all about the money, but hey, who doesn&rsquo;t love a little extra cash in their pocket?</p>
+<p><img loading="lazy" src="https://cdn-images-1.medium.com/max/1600/1*tzkpWvEnav9Y2aRdpB45tA.png" alt=""  />
+</p>
+<p><strong>Challenges with C Extension and Alternatives:</strong><br>
+While attempting a C extension, I encountered system issues that hindered progress. Seeking help on Stack Overflow, I am currently awaiting a response to overcome this obstacle. Meanwhile, I have shifted my focus to exploring procedural languages as an alternative solution.</p>
+<p><strong>Productivity and Travel:</strong><br>
+During this phase, I had to travel back to my college as summer vacations had ended, which affected my productivity to some extent. This might slow my progress but a few extra hours to cover up won&rsquo;t hurt.</p>
+<blockquote>
+<p>Conclusion:<br>
+During the last two weeks of my GSoC project, I have made progress by updating tutorials and extensions, while also facing challenges with the C extension. By troubleshooting and seeking help from online communities, I am actively working towards a resolution. Shifting focus to procedural languages has allowed me to make progress where needed.</p>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="/blog/week6/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>GSoC’23 at PostgreSQL (Biweekly Report 6)</span>
+  </a>
+  <a class="next" href="/blog/week4/">
+    <span class="title">Next »</span>
+    <br>
+    <span>GSoC’23 at PostgreSQL (Biweekly Report 4)</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="">Viraj&#39;s Workspace</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

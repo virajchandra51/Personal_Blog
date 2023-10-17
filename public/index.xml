@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Viraj&#39;s Workspace</title>
+    <link>/</link>
+    <description>Recent content on Viraj&#39;s Workspace</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Aug 2023 18:26:47 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GSoC’23 at PostgreSQL (Biweekly Report 6)</title>
+      <link>/blog/week6/</link>
+      <pubDate>Thu, 10 Aug 2023 18:26:47 +0530</pubDate>
+      
+      <guid>/blog/week6/</guid>
+      <description>Introduction:
+Welcome to the latest update on my Google Summer of Code (GSoC) journey with PostgreSQL. In this biweekly report, I&amp;rsquo;ll be walking you through the thrilling developments of the past two weeks. From extension management and upgradability to overcoming challenges and seeking support, I&amp;rsquo;ll be your guide through the highs and lows of my GSoC project.
+Shifting Focus: Extension Management and Upgradability
+In the quest for enhancing the user experience, I pivoted my attention towards extension management and upgradability.</description>
+    </item>
+    
+    <item>
+      <title>GSoC’23 at PostgreSQL (Biweekly Report 5)</title>
+      <link>/blog/week5/</link>
+      <pubDate>Tue, 18 Jul 2023 18:26:47 +0530</pubDate>
+      
+      <guid>/blog/week5/</guid>
+      <description>Introduction:
+Welcome to the latest update on my Google Summer of Code (GSoC) project, where I&amp;rsquo;ve been focused on Postgres extension development. Over the past two weeks, I&amp;rsquo;ve encountered challenges, made progress in updating tutorials and extensions, and sought help from online communities. In this blog post, I will share the key highlights of my journey during this phase.
+Handling Functions and Packaging:
+I added information about handling functions in different extension versions to the makefile.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Wed, 05 Jul 2023 16:21:47 +0530</pubDate>
+      
+      <guid>/about/</guid>
+      <description>For most period of high school / senior school, I have studied and inscribed the sacred runes and performed thearcane rituals that breathe life into the realm of the Internet. I hope and brag to conjure a website from nothing into existence, fully formed, before any of my peers. I do not use tricks, nor is this magic.
+I&amp;rsquo;m currently studying and future graduating from National Institute Of Technology, Raipur, with Bachelors In Information Technology.</description>
+    </item>
+    
+    <item>
+      <title>GSoC’23 at PostgreSQL (Biweekly Report 4)</title>
+      <link>/blog/week4/</link>
+      <pubDate>Tue, 04 Jul 2023 18:26:47 +0530</pubDate>
+      
+      <guid>/blog/week4/</guid>
+      <description>Introduction:
+Welcome to another update on my Google Summer of Code (GSoC) project, where I&amp;rsquo;ve been making significant strides in Postgres extension development. From Day 43 to Day 56, I focused on finalizing the tutorial content, working on sample extensions, addressing issues, and incorporating official documentation references. In this blog post, I will share the key highlights of my progress during this phase of the project.
+Github Repository: https://github.com/IshaanAdarsh/Postgres-extension-tutorial</description>
+    </item>
+    
+    <item>
+      <title>GSoC’23 at PostgreSQL (Biweekly Report 3)</title>
+      <link>/blog/week3/</link>
+      <pubDate>Wed, 28 Jun 2023 18:26:47 +0530</pubDate>
+      
+      <guid>/blog/week3/</guid>
+      <description>Introduction:
+Welcome to another update on my Google Summer of Code (GSoC) project, where I&amp;rsquo;ve been diving deeper into the world of Postgres extension development. In this blog post, I&amp;rsquo;ll share the highlights of my progress from Day 29 to Day 42, including my exploration of PGXN and PGXS, the improvement of the Minimum Viable Product (MVP), content organization, and my focus on regression testing and extension management.
+PGXN and PGXS:</description>
+    </item>
+    
+    <item>
+      <title>GSoC’23 at PostgreSQL (Biweekly Report 2)</title>
+      <link>/blog/week2/</link>
+      <pubDate>Wed, 14 Jun 2023 18:26:47 +0530</pubDate>
+      
+      <guid>/blog/week2/</guid>
+      <description>Introduction:
+Welcome to another update on my Google Summer of Code (GSoC) project, where I&amp;rsquo;ve been diving deep into the world of Postgres extension development. Over the past two weeks (Day 14 to Day 28), I&amp;rsquo;ve made significant progress, overcoming challenges, refining tutorial content, and organizing my repository. In this blog post, I will share the highlights of my journey, from restructuring tutorials to mastering the Makefile and everything in between.</description>
+    </item>
+    
+    <item>
+      <title>GSoC’23 at PostgreSQL (Biweekly Report 1)</title>
+      <link>/blog/week1/</link>
+      <pubDate>Tue, 30 May 2023 18:26:47 +0530</pubDate>
+      
+      <guid>/blog/week1/</guid>
+      <description>I got accepted for Google Summer of Code 2023 with PostgreSQL . I&amp;rsquo;m stoked to be working on a project where I&amp;rsquo;ll be creating an easy-to-follow tutorial on writing Postgres extension under the guidance of awesome mentors.
+My Project:
+GSoC Proposal Project Page Mentors: Jimmy Angelakos, David Wheeler As a GSoC student working on a Postgres extension project, my first two weeks have been a journey filled with diverse experiences. I began by meeting my mentors who provided valuable insights into the project&amp;rsquo;s timeline, deliverables, and the scope of possibilities.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

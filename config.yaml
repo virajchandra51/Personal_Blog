@@ -1,0 +1,118 @@
+baseURL: ""
+languageCode: en-us
+title: Viraj's Workspace
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Home
+                  url: /
+                  weight: 1
+                - name: About
+                  url: about/
+                  weight: 2
+                - name: Blog
+                  url: blog/
+                  weight: 3
+                - name: LinkedIn
+                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+                  weight: 4
+                - name: Search
+                  url: search/
+                  weight: 5
+
+
+params:
+  author: Viraj Chandra
+  description: Portfolio and Blog
+  TocOpen: false
+  hideMeta: false
+  defaultTheme: light
+    # disableThemeToggle: true
+  ShowReadingTime: true
+  disableSpecial1stPost: false
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+
+  # for enchanced SEO
+  env: production
+
+  homeInfoParams:
+    Title: Hello!👋🏻
+    Content: >-
+      
+      - My name is Viraj Chandra, I write about my Competitive Programming and Development journey, along with other useless stuff.
+
+      -
+      
+      - Deep connoisseur of coding, with a tint of music, I currently work to expand my base with my laptop in the comfortable spaces of what Man calls "Home".
+        In my spare time, I enjoy geopolitics, singing and playing all string instruments, and catching up on soccer and lawn tennis.
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:virajchandra51@gmail.com"
+    - name: "github"
+      url: "https://github.com/virajchandra51"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/viraj-chandra/"
+    - name: "instagram"
+      url: "https://www.instagram.com/me_ayan_710/"
+    - name: "discord"
+      url: "discordapp.com/users/virajchandra#1670"
+    - name: "hackerrank"
+      url: "https://www.hackerrank.com/virajchandra77"
+    - name: "codepen"
+      url: "https://codepen.io/virajchandra"
+
+    
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
