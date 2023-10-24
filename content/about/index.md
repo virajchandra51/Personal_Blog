@@ -28,9 +28,7 @@ Here's a sample of some stuff I have worked on till now.
 ---
 
 ## Blogs
-- Day to Day Account of my GSoC Journey with PostgreSQL 
-    - [PostgreSQL - GSoC Journey](https://reqi3m.hashnode.dev)
-
-- [Medium Blog](https://medium.com/@Requ13m)
+- General Account of my CP Journey
+    - [Competitive Programming Journey](https://virajchandra.netlify.app/blog/first/)
 
 ---
