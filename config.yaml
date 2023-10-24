@@ -31,7 +31,7 @@ languages:
                   url: blog/
                   weight: 3
                 - name: LinkedIn
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+                  url: https://www.linkedin.com/in/viraj-chandra/
                   weight: 4
                 - name: Search
                   url: search/
