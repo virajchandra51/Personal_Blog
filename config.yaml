@@ -25,10 +25,10 @@ languages:
                   url: /
                   weight: 1
                 - name: About
-                  url: about/
+                  url: /about
                   weight: 2
                 - name: Blog
-                  url: blog/
+                  url: /blog
                   weight: 3
                 - name: LinkedIn
                   url: https://www.linkedin.com/in/viraj-chandra/
